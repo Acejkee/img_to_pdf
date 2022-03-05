@@ -23,18 +23,16 @@ def get_data():
 def write_to_pdf():
     img_list = [f"media/{i}.jpg" for i in range(1, 49)]
 
-    #create PDF file
+    # create PDF file
     with open("result.pdf", "wb") as f:
         f.write(img2pdf.convert(img_list))
     print("file result.pdf ready!")
 
 
 def main():
-    #get_data()
+    # get_data()
     write_to_pdf()
-
 
 
 if __name__ == '__main__':
     main()
-
